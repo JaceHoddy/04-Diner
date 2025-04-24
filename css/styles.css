@@ -389,33 +389,43 @@ ul.open.menuLinks {
 #cardContainer {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 25px;
+  margin-bottom: 40px;
 }
 
 .card {
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   width: auto;
-  padding: 10px;
-  margin: 15px;
+  margin: 0 10px;
 }
 .card img {
   width: 100%;
 }
 .card h5 {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   text-align: center;
   font-size: 20px;
+  margin: 0px;
+  padding: 5px;
+  background-color: #3990c3;
+  color: white;
 }
 .card a {
   background-color: #1d295f;
-  padding: 5px;
+  padding: 10px;
   color: white;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 /* --------------------------- MAIN --------------------------- */
 main h1 {
-  padding: 1rem 10px 0.5rem 10px;
+  padding: 0.5rem 10px 0 10px;
   font-size: 1.5rem;
   color: #7c1d47;
   font-weight: 300;

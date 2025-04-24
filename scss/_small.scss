@@ -83,26 +83,36 @@ nav {
 #cardContainer {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 40px;
 }
 .card {
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     width: auto;
-    padding: 10px;
-    margin: 15px;
+    margin: 0 $gutter;
 img {
     width: 100%;
     }
     h5 {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
         text-align: center;
         font-size: 20px;
+        margin: 0px;
+        padding: 5px;
+        background-color: $accentColor;
+        color: white;
     }
     a {
         background-color: $primaryColor;
-        padding: 5px;
+        padding: 10px;
         color: white;
         text-decoration: none;
-        border-radius: 4px;
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -119,10 +129,10 @@ img {
 /* --------------------------- MAIN --------------------------- */
 main {
     h1 {
-        padding: 1rem $gutter.5rem $gutter;
+        padding: .5rem $gutter 0 $gutter;
         font-size: 1.5rem;
         color: $secondaryColor;
-        font-weight: $lightWeight
+        font-weight: $lightWeight;
     }
     p {
         padding: .5rem $gutter;
